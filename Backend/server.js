@@ -14,6 +14,10 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 app.use("/api", chatRoutes);
 
+app.get("/", (req, res) => {
+    res.send("IntuitraGPT - Your Intelligent AI Companion Powered by OpenAI, Built with Love");
+});
+
 app.listen(process.env.PORT, () => {
     console.log(`server running on ${process.env.PORT}` || 8080);
     connectDB();
