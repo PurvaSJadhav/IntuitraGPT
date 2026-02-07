@@ -6,6 +6,8 @@ import { ScaleLoader } from "react-spinners";
 import { useTheme } from "./ThemeContext.jsx";
 import { useAuth } from "./AuthContext.jsx";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 function ChatWindow() {
     const { prompt, setPrompt, reply, setReply, currThreadId, setPrevChats, setNewChat } = useContext(MyContext);
     const { theme, toggleTheme } = useTheme();
@@ -49,7 +51,7 @@ function ChatWindow() {
         };
 
         try {
-            const response = await fetch("http://localhost:8080/api/chat" || `${process.env.backend_url}/api/chat`, options);
+            const response = await fetch(`${API_BASE_URL}/api/chat`, options);
             const res = await response.json();
             console.log(res);
             setReply(res.reply);

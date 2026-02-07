@@ -4,13 +4,15 @@ import { MyContext } from "./MyContext.jsx";
 import { useAuth } from "./AuthContext.jsx";
 import { v1 as uuidv1 } from "uuid";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 function Sidebar() {
     const { allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply, setCurrThreadId, setPrevChats } = useContext(MyContext);
     const { token } = useAuth();
 
     const getAllThreads = async () => {
         try {
-            const response = await fetch("http://localhost:8080/api/thread" || `${process.env.backend_url}/api/thread`, {
+            const response = await fetch(`${API_BASE_URL}/api/thread`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -42,7 +44,7 @@ function Sidebar() {
         setCurrThreadId(newThreadId);
 
         try {
-            const response = await fetch(`http://localhost:8080/api/thread/${newThreadId}` || `${process.env.backend_url}/api/thread/${newThreadId}`, {
+            const response = await fetch(`${API_BASE_URL}/api/thread/${newThreadId}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -59,7 +61,7 @@ function Sidebar() {
 
     const deleteThread = async (threadId) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/thread/${threadId}` || `${process.env.backend_url}/api/thread/${threadId}`, {
+            const response = await fetch(`${API_BASE_URL}/api/thread/${threadId}`, {
                 method: "DELETE",
                 headers: {
                     'Authorization': `Bearer ${token}`

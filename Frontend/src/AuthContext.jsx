@@ -2,7 +2,8 @@ import { createContext, useState, useEffect, useContext } from 'react';
 
 const AuthContext = createContext();
 
-const API_URL = 'http://localhost:8080/api/auth' || `${process.env.backend_url}/api/auth`;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_URL = `${API_BASE_URL}/api/auth`;
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
