@@ -1,4 +1,22 @@
 {
+  "name": "intuitragpt-backend",
+  "version": "1.0.0",
+  "description": "Backend API for IntuitraGPT - AI-powered chatbot",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "chatbot",
+    "openai",
+    "gpt",
+    "nodejs",
+    "express"
+  ],
+  "author": "Purva Jadhav",
+  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
@@ -6,7 +24,9 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.16.1",
-    "nodemon": "^3.1.10",
     "openai": "^5.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

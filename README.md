@@ -18,7 +18,7 @@
 <p align="center">
   <a href="#-live-demo">View Demo</a> •
   <a href="#-features">Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#️-tech-stack">Tech Stack</a> •
   <a href="#-installation">Installation</a> 
 </p>
 
@@ -26,8 +26,7 @@
 
 ## 🌐 Live Demo
 
-> 🔗 **[Click here to experience IntuitraGPT Live](#)**  
-> *(Add your deployed link here)*
+> 🔗 **[Click here to experience IntuitraGPT Live](_)**
 
 ---
 
@@ -137,7 +136,7 @@ IntuitraGPT/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/IntuitraGPT.git
+git clone https://github.com/PurvaSJadhav/IntuitraGPT.git
 cd IntuitraGPT
 ```
 
@@ -203,8 +202,6 @@ Navigate to `http://localhost:5173` and start chatting! 🎉
   <em>Login Page • Chat Interface • Dark Mode • Mobile View</em>
 </p>
 
-## 👩💻 Developer
-
 <p align="center">
   <b>Crafted with 💜 by Purva Jadhav</b>
 </p>
@@ -212,8 +209,6 @@ Navigate to `http://localhost:5173` and start chatting! 🎉
 <p align="center">
   <em>IntuitraGPT © 2026 — All Rights Reserved</em>
 </p>
-
----
 
 <p align="center">
   <strong>⭐ If you found this project helpful, please give it a star! ⭐</strong>
