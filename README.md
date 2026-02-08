@@ -26,7 +26,7 @@
 
 ## 🌐 Live Demo
 
-> 🔗 **[Click here to experience IntuitraGPT Live](_)**
+> 🔗 **[Click here to experience IntuitraGPT Live](https://intuitragpt.netlify.app)**
 
 ---
 
